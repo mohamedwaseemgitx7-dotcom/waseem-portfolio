@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Mohamed Waseem — Computer Science graduate and full-stack developer building web apps, automation and AI-powered tools.">
+<title>Mohamed Waseem — Full-Stack Developer</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#07080c">
+<meta property="og:title" content="Mohamed Waseem — Full-Stack Developer">
+<meta property="og:description" content="Computer Science graduate building web apps, automation systems and AI-powered tools.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<script>
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('is-loading');
+  setTimeout(function(){document.documentElement.classList.remove('is-loading')}, 3500);
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.6a3.2 3.2 0 0 1 0 6.1M21 20c0-2.8-1.8-5.1-4.3-5.8"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 10a4.3 4.3 0 0 1-.4 8.5z"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><rect x="4" y="13" width="3.6" height="7" rx="1"/><rect x="10.2" y="8" width="3.6" height="12" rx="1"/><rect x="16.4" y="3.5" width="3.6" height="16.5" rx="1"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.8"/><path d="M5 5.5v13c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-13M5 12c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><path d="M12 12 20 4M17 4h3v3"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.5 4.5-2 1.5a11 11 0 0 0 6 6l1.5-2L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5A16 16 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4z"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19z"/><path d="M9 8.5c0 3 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.2-1.6-2.6-2.6l.8-1-1-2z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.8-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.2 12 20 12 20z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15"/><path d="m5 19 8-8"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1M10 21v-3h4v3"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 15c-1 1-1.5 3.5-1.5 5.5 2 0 4.5-.5 5.5-1.5M9.5 14.5l-2-2c1-4 4-9 12-10-1 8-6 11-10 12z"/><circle cx="15" cy="9" r="1.6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6M6 4l6 6 6-6"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="5" width="7.5" height="6" rx="1.5"/><rect x="13" y="5" width="7.5" height="6" rx="1.5"/><rect x="3.5" y="13" width="7.5" height="6" rx="1.5"/><rect x="13" y="13" width="7.5" height="6" rx="1.5"/><path d="M15.5 16h3"/></symbol>
+  <symbol id="i-win" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M6 6.5h.01M8.5 6.5h.01M7 13h7M7 16h4"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9.5 4A2.8 2.8 0 0 0 6.7 6.6 3 3 0 0 0 4.5 11.5a3 3 0 0 0 2 5A2.8 2.8 0 0 0 9.5 20c.9 0 1.5-.7 1.5-1.5v-13C11 4.7 10.4 4 9.5 4zM14.5 4a2.8 2.8 0 0 1 2.8 2.6 3 3 0 0 1 2.2 4.9 3 3 0 0 1-2 5A2.8 2.8 0 0 1 14.5 20c-.9 0-1.5-.7-1.5-1.5v-13c0-.8.6-1.5 1.5-1.5z"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-pos" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="9" rx="1.5"/><path d="M9 6h6M4 13.5h16l-1 7H5z"/><path d="M8 16.5h.01M12 16.5h.01M16 16.5h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></symbol>
+  <symbol id="i-lang" viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c.5 3 2.5 5.5 6 7M11 5c-.5 3.5-3 6.5-7 8M13 21l4-9 4 9M14.5 18h5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><path d="M12 5h.01M12 12h.01M12 19h.01"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></symbol>
+</svg>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo" aria-label="Mohamed Waseem, home">MW<b>.</b></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <span class="nav-ind" id="navInd"></span>
+    </ul>
+    <a class="btn btn-ghost nav-cta" href="assets/resume/Mohamed_Waseem_Resume.pdf" download data-resume>Download Resume <svg class="i"><use href="#i-down"/></svg></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="m-menu" id="mMenu" aria-label="Mobile">
+  <a class="m-link" href="#home">Home</a>
+  <a class="m-link" href="#about">About</a>
+  <a class="m-link" href="#projects">Projects</a>
+  <a class="m-link" href="#experience">Experience</a>
+  <a class="m-link" href="#skills">Skills</a>
+  <a class="m-link" href="#contact">Contact</a>
+  <a class="btn btn-primary" href="assets/resume/Mohamed_Waseem_Resume.pdf" download data-resume>Download Resume <svg class="i"><use href="#i-down"/></svg></a>
+</nav>
+
+<main>
+<!-- ============ HOME ============ -->
+<section class="sec hero" id="home">
+  <div class="planet" aria-hidden="true"></div>
+  <div class="streak" aria-hidden="true"></div>
+  <div class="corner-glow" aria-hidden="true"></div>
+
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker reveal-intro">BUILD <i></i> LEARN <i></i> SOLVE <i></i> REPEAT</p>
+      <h1 class="display reveal-intro">
+        <span class="line"><span>Turning</span></span>
+        <span class="line"><span>Ideas into <span class="o">Impact.</span></span></span>
+      </h1>
+      <p class="hero-sub reveal-intro">Computer Science Graduate &amp; Full-Stack Developer</p>
+      <p class="lede hero-desc reveal-intro">I build web applications, automation systems, and AI-powered solutions to solve real-world problems.</p>
+      <div class="btns reveal-intro">
+        <a href="#projects" class="btn btn-primary">View My Work <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <ul class="traits reveal-intro">
+        <li><svg class="i"><use href="#i-code"/></svg>Clean Code</li>
+        <li><svg class="i"><use href="#i-bulb"/></svg>Creative Thinking</li>
+        <li><svg class="i"><use href="#i-laptop"/></svg>Building Solutions</li>
+        <li><svg class="i"><use href="#i-users"/></svg>Real-World Impact</li>
+      </ul>
+    </div>
+    <ol class="roles reveal-intro" id="roles" aria-label="What I am">
+      <li class="on">Developer</li>
+      <li>Learner</li>
+      <li>Problem Solver</li>
+      <li>Lifelong Curious</li>
+    </ol>
+  </div>
+
+  <div class="hand hero-note reveal-intro" aria-hidden="true">
+    Better<br>&nbsp;Tools.<br>&nbsp;&nbsp;Brighter<br>&nbsp;&nbsp;&nbsp;Tomorrows.
+    <svg viewBox="0 0 90 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 13C30 6 60 3 88 2M20 14c20-4 40-6 58-7"/></svg>
+  </div>
+
+  <div class="wrap featured reveal-intro">
+    <div class="featured-head">
+      <p class="eyebrow">A glimpse of what I build</p>
+      <h2>Featured Projects</h2>
+    </div>
+    <a href="#medforms" class="fcard fcard-med">
+      <span class="ftile"><svg class="i"><use href="#i-file"/></svg></span>
+      <span class="fname">MedForms</span>
+      <span class="mini-lap" aria-hidden="true"><span class="scr"><span class="sb"><i></i><i></i><i></i><i></i><i></i></span><span class="mn"><span class="kpis"><i></i><i></i><i></i><i></i></span><span class="rows"><i></i><i></i><i></i><i></i><i></i></span></span></span></span>
+      <span class="fgo"><svg class="i"><use href="#i-arrow"/></svg></span>
+    </a>
+    <a href="#whatsapp" class="fcard fcard-wa">
+      <span class="ftile"><svg class="i"><use href="#i-wa"/></svg></span>
+      <span class="fname">Farmers<br>WhatsApp Assistant</span>
+      <svg class="leaf i" style="left:46%;top:30%;width:70px;height:70px" aria-hidden="true"><use href="#i-leaf"/></svg>
+      <span class="mini-phone" aria-hidden="true">
+        <span class="ph-h"><i></i>Farmers Assistant</span>
+        <span class="b" style="display:block;color:#dfe9e2">Vanakkam!<br>How can I help you today?</span>
+        <span class="opt" style="display:block">Check Schemes</span>
+        <span class="opt" style="display:block">Eligibility</span>
+        <span class="opt" style="display:block">Application Guide</span>
+      </span>
+      <span class="fgo"><svg class="i"><use href="#i-arrow-ur"/></svg></span>
+    </a>
+    <a href="#projects" class="view-all">View All <svg class="i"><use href="#i-arrow"/></svg></a>
+  </div>
+
+  <div class="wrap hero-foot reveal-intro">
+    <div class="socials">
+      <a href="https://github.com/mohamedwaseemgitx7-dotcom" target="_blank" rel="noopener" aria-label="GitHub"><span class="gh-mark">gh</span></a>
+      <a href="https://www.linkedin.com/in/mohamed-waseem-ba3b9142b/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="in-mark">in</span></a>
+      <a href="mailto:mohamedxxwaseem70@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+    </div>
+    <a href="#about" class="scroll-cue"><span class="row"><span class="mouse"></span>Scroll to explore</span><svg class="i"><use href="#i-chev"/></svg></a>
+    <p class="tagline-dash">Build Today. Impact Tomorrow.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow" data-r>About me</p>
+      <h2 class="display" data-split>
+        <span class="line"><span>A developer who</span></span>
+        <span class="line"><span>likes building</span></span>
+        <span class="line"><span class="o">useful things.</span></span>
+      </h2>
+      <p class="lede" data-r>I’m Mohamed Waseem, a Computer Science graduate (2026) who enjoys turning ideas into practical software solutions. I work across the full stack — from building clean user interfaces to designing backend services, automating real-world workflows, and exploring AI-assisted tools that make a difference in people’s lives.</p>
+      <p class="lede" data-r>I’m especially interested in web applications, automation, image and speech processing, and solutions for domains like healthcare and agriculture. I’m always learning, exploring new tools, and looking for opportunities to work on meaningful products.</p>
+      <div class="facts" data-r>
+        <div class="fact"><svg class="i"><use href="#i-cap"/></svg><div><strong>B.Tech CSE</strong><span>2022 – 2026</span></div></div>
+        <div class="fact"><svg class="i"><use href="#i-pin"/></svg><div><strong>Thanjavur, India</strong><span>Based in</span></div></div>
+      </div>
+      <blockquote class="quote" data-r>
+        <svg class="qm" viewBox="0 0 24 24"><path d="M3 19v-6c0-4.5 2.3-7.4 6.8-8.5l.7 2C8 7.4 7 9 6.9 11H10v8zM13 19v-6c0-4.5 2.3-7.4 6.8-8.5l.7 2C18 7.4 17 9 16.9 11H20v8z"/></svg>
+        <p>Curious mind.<br>Practical solutions.<br>Better tomorrow.</p>
+        <cite>Mohamed Waseem</cite>
+      </blockquote>
+    </div>
+
+    <div class="desk" aria-hidden="true">
+      <div class="win">
+        <svg viewBox="0 0 300 150" preserveAspectRatio="none"><path d="M0 70 40 45 70 60 110 30 150 55 190 35 230 58 270 40 300 55V150H0z" fill="#2a1a15"/><path d="M0 95 50 72 95 90 140 66 190 92 240 74 300 88V150H0z" fill="#150e0d"/><path d="M0 120 60 104 120 118 180 100 240 116 300 108V150H0z" fill="#0b0909"/></svg>
+        <p class="vtext">BETTER<br>SOFTWARE<br>FOR A<br>BRIGHTER<br>TOMORROW</p>
+      </div>
+      <div class="hand flow-note">Ideas<br>&nbsp;→ Code<br>&nbsp;&nbsp;→ Real Impact
+        <svg viewBox="0 0 130 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12C40 4 90 2 128 5"/></svg>
+      </div>
+      <div class="books"><span>Clean Code</span><span>System Design</span><span>Building for Impact</span></div>
+      <div class="laptop">
+        <div class="lap-scr"><div class="code"><span class="k">from</span> flask <span class="k">import</span> Flask, request
+<span class="k">from</span> services <span class="k">import</span> intent, schemes
+
+app = Flask(__name__)
+
+<span class="d">@app.post</span>(<span class="s">"/webhook"</span>)
+<span class="k">def</span> <span class="f">webhook</span>():
+    msg = request.json[<span class="s">"message"</span>]
+    <span class="k">if</span> msg[<span class="s">"type"</span>] == <span class="s">"image"</span>:
+        <span class="k">return</span> <span class="f">diagnose_crop</span>(msg)
+    <span class="k">if</span> msg[<span class="s">"type"</span>] == <span class="s">"audio"</span>:
+        msg = <span class="f">speech_to_text</span>(msg)
+    <span class="c"># answer in the farmer's language</span>
+    reply = schemes.<span class="f">answer</span>(intent.<span class="f">detect</span>(msg))
+    <span class="k">return</span> <span class="f">send_whatsapp</span>(reply)</div></div>
+        <div class="lap-base"></div>
+      </div>
+      <div class="chain" id="chain">
+        <svg class="links" id="chainLinks" fill="none" stroke="rgba(255,140,46,.85)" stroke-width="1.5"></svg>
+        <div class="cc" style="left:44%;top:1%"><svg class="i"><use href="#i-bulb"/></svg>Understand<br>Real Problems</div>
+        <div class="cc" style="left:50%;top:18%"><svg class="i"><use href="#i-gear"/></svg>Build &amp; Experiment</div>
+        <div class="cc" style="left:56%;top:34%"><svg class="i"><use href="#i-users"/></svg>Learn &amp; Improve</div>
+        <div class="cc hot" style="left:62%;top:51%"><svg class="i"><use href="#i-target"/></svg>Create<br>Real Impact</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap drives-wrap">
+    <p class="tracked" data-r>What drives me</p>
+    <div class="drives">
+      <div class="drive" data-r><svg class="i"><use href="#i-bulb"/></svg><h3>Problem Solving</h3><p>Understand real needs and build practical solutions.</p></div>
+      <div class="drive" data-r><svg class="i"><use href="#i-bars"/></svg><h3>Continuous Learning</h3><p>Explore new tools and improve my skills every day.</p></div>
+      <div class="drive" data-r><svg class="i"><use href="#i-users"/></svg><h3>Real Impact</h3><p>Build solutions that help people in their daily lives.</p></div>
+      <div class="drive" data-r><svg class="i"><use href="#i-rocket"/></svg><h3>What’s Next</h3><p>Work with great teams and contribute to meaningful products.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="projects"></div>
+<!-- ============ MEDFORMS ============ -->
+<section class="sec medforms" id="medforms">
+  <div class="wrap mf-grid">
+    <div>
+      <p class="eyebrow" data-r>Featured project</p>
+      <h2 class="display mf-title" data-split><span class="line"><span>MedForms <span class="o">Pro</span></span></span></h2>
+      <p class="mf-sub" data-r>Clinical Perfusion &amp; ICU Forms Management</p>
+      <p class="lede" data-r>A full-stack web application that digitizes ICU and perfusion forms, replacing paper records with structured, searchable data. Built to match real clinical workflows and used in production by healthcare professionals.</p>
+      <div class="btns" data-r>
+        <a href="https://abcd-nine-zeta.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Open Live Project <svg class="i"><use href="#i-arrow"/></svg></a>
+        <button class="btn btn-ghost" data-open="dlgMed"><svg class="i" style="color:var(--o)"><use href="#i-file"/></svg>View Details</button>
+      </div>
+      <div class="built" data-r>
+        <p class="tracked">Built with</p>
+        <ul>
+          <li data-pop><span class="mono-tile" style="color:#fff;background:#000;border-color:#555">N</span>Next.js</li>
+          <li data-pop><span class="mono-tile" style="color:#f0873a">Jv</span>Java</li>
+          <li data-pop><span class="mono-tile" style="color:#6dbd3f">Sb</span>Spring Boot</li>
+          <li data-pop><span class="mono-tile" style="color:#f5c542">Py</span>Python</li>
+          <li data-pop><span class="mono-tile" style="color:#3ecf8e">Su</span>Supabase</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="device" aria-label="MedForms Pro dashboard preview">
+      <div class="mf-lap" id="mfLap">
+        <div class="lap-scr">
+          <div class="dash">
+            <div class="side">
+              <div class="brand"><i>M</i>MedForms <b>Pro</b></div>
+              <div class="nv on"><svg class="i"><use href="#i-home"/></svg>Dashboard</div>
+              <div class="nv"><svg class="i"><use href="#i-user"/></svg>Patients</div>
+              <div class="nv"><svg class="i"><use href="#i-file"/></svg>Forms</div>
+              <div class="nv"><svg class="i"><use href="#i-bars"/></svg>Reports</div>
+              <div class="nv"><svg class="i"><use href="#i-gear"/></svg>Settings</div>
+            </div>
+            <div class="main">
+              <div class="top">
+                <div class="search"><svg class="i"><use href="#i-search"/></svg>Search forms, patients, or records…</div>
+                <div class="user"><i></i><div><b>Dr. Ahmed</b><span>Cardiac Perfusionist</span></div></div>
+              </div>
+              <div><h4>Welcome back, Dr. Ahmed</h4><p class="hint">Manage your ICU and perfusion forms efficiently</p></div>
+              <div class="kp">
+                <div><span>Total Patients</span><b>124</b><em>+12%</em><small>from last month</small></div>
+                <div><span>Forms Completed</span><b>892</b><em>+18%</em><small>from last month</small></div>
+                <div><span>Pending Forms</span><b>12</b><em class="dn">−6%</em><small>from last month</small></div>
+                <div><span>Active Users</span><b>8</b><em style="color:#8a90a0;background:#f0f1f4">+0%</em><small>from last month</small></div>
+              </div>
+              <div class="tbl">
+                <div class="tbl-h">Recent Forms <a>View all →</a></div>
+                <div class="tr th"><span>Patient Name</span><span>Form Type</span><span>Date</span><span>Status</span></div>
+                <div class="tr"><span>Kumar S</span><span>Perfusion Record</span><span>Jan 14, 2025</span><span class="chip">Completed</span></div>
+                <div class="tr"><span>Ravi M</span><span>ICU Daily Report</span><span>Jan 14, 2025</span><span class="chip">Completed</span></div>
+                <div class="tr"><span>Aisha B</span><span>Pre-Op Assessment</span><span>Jan 13, 2025</span><span class="chip pr">In Progress</span></div>
+                <div class="tr"><span>Daniel K</span><span>Post-Op Record</span><span>Jan 13, 2025</span><span class="chip">Completed</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lap-base"></div>
+      </div>
+
+      <div class="callout co1" data-float><svg class="i"><use href="#i-file"/></svg><div><b>Digital Forms</b><span>Replace paper with smart digital forms</span></div></div>
+      <div class="callout co2" data-float><svg class="i"><use href="#i-lock"/></svg><div><b>Secure &amp; Private</b><span>Per-doctor data storage with Supabase</span></div></div>
+      <div class="callout co3" data-float><svg class="i" style="color:var(--o)"><use href="#i-pulse"/></svg><div><b>Structured Workflow</b><span>Designed for real clinical use</span></div></div>
+      <div class="callout co4" data-float><svg class="i"><use href="#i-cloud"/></svg><div><b>Google Drive Sync</b><span>Export data to Google Sheets &amp; Drive</span></div></div>
+
+      <div class="prec" data-float>
+        <h5>Perfusion Record</h5>
+        <div class="f"><span>Patient ID</span><span>PRF-2025-001</span></div>
+        <div class="f"><span>Date</span><span>14/01/2025</span></div>
+        <div class="f"><span>Flow Rate (L/min)</span><span>4.2</span></div>
+        <div class="f"><span>Temperature (°C)</span><span>36.5</span></div>
+        <div class="save">Save Record</div>
+      </div>
+      <div class="hand side-note" aria-hidden="true">Real<br>Production<br>Application</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="pstrip">
+      <div data-r><svg class="i"><use href="#i-file"/></svg><div><h3>Problem</h3><p>Paper-based ICU and perfusion forms were difficult to manage, search and organize.</p></div></div>
+      <div data-r><svg class="i"><use href="#i-bulb"/></svg><div><h3>Solution</h3><p>A full-stack web application that follows existing clinical workflows with a clean digital interface.</p></div></div>
+      <div data-r><svg class="i"><use href="#i-bars"/></svg><div><h3>Impact</h3><p>Faster access to patient records and more organized, searchable data for healthcare professionals.</p></div></div>
+      <div data-r><svg class="i"><use href="#i-db"/></svg><div><h3>Status</h3><p>Live and currently used in production.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHATSAPP ============ -->
+<section class="sec wa" id="whatsapp">
+  <div class="crops" aria-hidden="true"></div>
+  <div class="wrap wa-grid">
+    <div>
+      <p class="eyebrow" data-r>WhatsApp projects</p>
+      <h2 class="display" data-split>
+        <span class="line"><span>Real Conversations.</span></span>
+        <span class="line"><span>Real <span class="o">Impact.</span></span></span>
+      </h2>
+      <p class="lede" data-r>Building WhatsApp-based solutions that solve real problems for real people — from farmers to healthcare, education and beyond.</p>
+      <ul class="feats" data-r>
+        <li><svg class="i"><use href="#i-chat"/></svg>Conversational<br>AI</li>
+        <li><svg class="i"><use href="#i-globe"/></svg>Multilingual<br>(Tamil / English)</li>
+        <li><svg class="i"><use href="#i-zap"/></svg>Real-time<br>Responses</li>
+        <li><svg class="i"><use href="#i-cloud"/></svg>Scalable<br>&amp; Affordable</li>
+      </ul>
+      <div class="btns" data-r>
+        <a href="#pipeline" class="btn btn-primary">See How It Works <svg class="i" style="transform:rotate(90deg)"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="wa-quote" data-r>
+        <svg class="qm" viewBox="0 0 24 24"><path d="M3 19v-6c0-4.5 2.3-7.4 6.8-8.5l.7 2C8 7.4 7 9 6.9 11H10v8zM13 19v-6c0-4.5 2.3-7.4 6.8-8.5l.7 2C18 7.4 17 9 16.9 11H20v8z"/></svg>
+        <p>Technology is more powerful<br>when it reaches everyone.”</p>
+        <cite>Mohamed Waseem</cite>
+      </div>
+      <div class="stats" data-r>
+        <div><b data-count="1" data-suffix="K+">1K+</b><span>Farmer Queries<br>Handled <small>(Demo)</small></span></div>
+        <div><b data-count="95" data-suffix="%">95%</b><span>Intent Detection<br>Accuracy</span></div>
+        <div><b data-count="3">3</b><span>Languages<br><small>(Tamil, English, Tanglish)</small></span></div>
+        <div><b>24/7</b><span>Always Available</span></div>
+      </div>
+    </div>
+
+    <div class="phone-col">
+      <div class="hand wa-note1" aria-hidden="true">From<br>&nbsp;Questions<br>&nbsp;&nbsp;to Solutions
+        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4c4 24 18 40 48 46M42 42l10 8-12 4"/></svg>
+      </div>
+      <div class="phone" id="phone" aria-label="Farmers Assistant chat preview">
+        <div class="phone-body"><div class="phone-scr">
+          <div class="ph-island"></div>
+          <div class="ph-status"><span>9:41</span><span class="ph-bars"><i style="height:1.4cqw"></i><i style="height:2cqw"></i><i style="height:2.6cqw"></i><i style="height:3.2cqw"></i></span></div>
+          <div class="ph-head">
+            <div class="av"><svg class="i"><use href="#i-leaf"/></svg></div>
+            <div><b>Farmers Assistant</b><span>Online</span></div>
+            <div class="ico"><svg class="i"><use href="#i-phone"/></svg><svg class="i"><use href="#i-dots"/></svg></div>
+          </div>
+          <div class="chat">
+            <div class="bub out" data-bub>Vanakkam, PM-KISAN pathi solunga?<small>9:41 AM ✓✓</small></div>
+            <div class="bub in" data-bub>Vanakkam! PM-KISAN is a central government scheme that provides ₹6,000 per year to eligible farmers.<small>9:41 AM</small></div>
+            <div class="scheme" data-bub>
+              <div class="img"></div>
+              <div class="txt"><b>PM-KISAN Scheme</b>
+                <ul><li><svg class="i"><use href="#i-check"/></svg>₹6,000 per year</li><li><svg class="i"><use href="#i-check"/></svg>For all eligible farmers</li><li><svg class="i"><use href="#i-check"/></svg>Direct bank transfer</li></ul>
+                <div class="ap">How to Apply?</div>
+              </div>
+            </div>
+            <div class="bub in" data-bub style="max-width:92%">Need more details or want to check your eligibility?
+              <div class="qr"><span>Check Eligibility</span><span>Main Menu</span></div>
+            </div>
+          </div>
+          <div class="ph-input"><svg class="i" style="font-size:1.3em;color:#cfd8d3"><use href="#i-plus"/></svg><div class="field">Type a message…<svg class="i"><use href="#i-cam"/></svg></div><div class="mic"><svg class="i"><use href="#i-mic"/></svg></div></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="pipeline" id="pipeline">
+      <div class="pstep first" data-step><svg class="i"><use href="#i-wa"/></svg><span>User Message<br>(WhatsApp)</span></div>
+      <div class="parrow"><svg class="i"><use href="#i-down"/></svg></div>
+      <div class="pstep" data-step><svg class="i"><use href="#i-brain"/></svg><span>AI Understanding<br>&amp; Intent Detection</span></div>
+      <div class="parrow"><svg class="i"><use href="#i-down"/></svg></div>
+      <div class="pstep" data-step><svg class="i"><use href="#i-db"/></svg><span>Scheme Database<br>(Google Sheets / DB)</span></div>
+      <div class="parrow"><svg class="i"><use href="#i-down"/></svg></div>
+      <div class="pstep" data-step><svg class="i"><use href="#i-file"/></svg><span>Personalized Response<br>(with Steps &amp; Links)</span></div>
+      <div class="hand wa-note2" aria-hidden="true"><svg viewBox="0 0 70 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M68 4C50 10 30 26 4 34M14 26 4 34l12 4"/></svg><span>Simple.<br>Useful.<br>Accessible.</span></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="sec exp" id="experience">
+  <div class="wrap exp-grid">
+    <div class="exp-left">
+      <p class="eyebrow" data-r>Experience</p>
+      <h2 class="display" data-split>
+        <span class="line"><span>Learning.</span></span>
+        <span class="line"><span>Working.</span></span>
+        <span class="line"><span class="o">Growing.</span></span>
+      </h2>
+      <p class="lede" data-r>A journey built through hands-on experience, real projects, and continuous learning. Each opportunity has helped me develop new skills and a stronger understanding of how to build useful technology.</p>
+      <p class="dash-note" data-r>SAME CURIOSITY.<br>BIGGER GOALS.</p>
+
+      <div class="mtn" aria-hidden="true">
+        <svg viewBox="0 0 600 760" preserveAspectRatio="xMidYMax slice">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#07080c" stop-opacity="0"/><stop offset=".5" stop-color="#110b0b" stop-opacity=".9"/><stop offset=".75" stop-color="#5a2610"/><stop offset=".9" stop-color="#d9691f"/><stop offset="1" stop-color="#ffa45a"/></linearGradient>
+            <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2219"/><stop offset=".4" stop-color="#150e0e"/></linearGradient>
+            <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241814"/><stop offset=".5" stop-color="#0c0a0b"/></linearGradient>
+            <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15100f"/><stop offset=".5" stop-color="#07070a"/></linearGradient>
+            <radialGradient id="sun" cx=".55" cy=".48" r=".45"><stop offset="0" stop-color="#ff9a44" stop-opacity=".75"/><stop offset="1" stop-color="#ff6a10" stop-opacity="0"/></radialGradient>
+            <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+            <linearGradient id="fadeL" x1="0" x2="1"><stop offset="0" stop-color="#07080c"/><stop offset=".25" stop-color="#07080c" stop-opacity="0"/></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="600" height="420" fill="url(#sky)"/>
+          <ellipse cx="330" cy="380" rx="300" ry="120" fill="url(#sun)"/>
+          <path d="M0 400 60 350 110 372 170 320 230 362 280 330 340 368 400 322 460 360 520 334 600 368V760H0z" fill="url(#m1)"/>
+          <path d="M0 400 60 350 110 372 170 320 230 362 280 330 340 368 400 322 460 360 520 334 600 368" fill="none" stroke="#ff9a4a" stroke-opacity=".35" stroke-width="1.2"/>
+          <path d="M0 470 50 420 120 480 190 400 250 452 300 436 360 492 430 430 500 480 560 450 600 470V760H0z" fill="url(#m2)"/>
+          <path d="M0 470 50 420 120 480 190 400 250 452 300 436 360 492 430 430 500 480 560 450 600 470" fill="none" stroke="#ff8a3a" stroke-opacity=".22" stroke-width="1"/>
+          <path d="M0 560 70 500 150 580 230 540 300 640 390 600 470 690 540 650 600 680V760H0z" fill="url(#m3)"/>
+          <g id="road">
+            <path id="roadGlow" d="M560 760C470 720 330 730 300 680S420 610 390 580 250 540 290 510 390 480 340 452 280 426 312 404" fill="none" stroke="#ff8a2e" stroke-width="12" stroke-linecap="round" opacity=".5" filter="url(#blur6)"/>
+            <path id="roadCore" d="M560 760C470 720 330 730 300 680S420 610 390 580 250 540 290 510 390 480 340 452 280 426 312 404" fill="none" stroke="#ffc07a" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <rect x="0" y="0" width="600" height="760" fill="url(#fadeL)"/>
+        </svg>
+      </div>
+      <div class="exp-callout" data-r>Every experience<br>adds a new direction.</div>
+    </div>
+
+    <div>
+      <div class="tl" id="tl">
+        <div class="tl-rail"><div class="tl-fill" id="tlFill"></div></div>
+
+        <div class="tl-year" data-r>2026<br>– Present</div>
+        <div class="tl-item" data-r>
+          <article class="tcard">
+            <div>
+              <div class="tcard-h"><svg class="i"><use href="#i-receipt"/></svg><h3>Data Entry &amp; Cashier (Part-Time)</h3><span class="badge">Current</span></div>
+              <p class="org"><svg class="i"><use href="#i-pin"/></svg>Johor Bahru, Malaysia</p>
+              <div class="tbody">
+                <p>Handling daily data entry, billing and inventory records using AutoCount, OneSale and Qube POS/backend systems. Managing cashier duties including transaction processing, cash reconciliation, and customer-facing service.</p>
+                <div class="pills"><span data-pop>AutoCount</span><span data-pop>OneSale</span><span data-pop>Qube POS</span><span data-pop>Inventory</span><span data-pop>Customer Service</span></div>
+              </div>
+            </div>
+            <div class="tside">
+              <div class="pos-art"><span class="glow"></span><svg class="i"><use href="#i-pos"/></svg></div>
+              <p>Real-world exposure to business operations and systems.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="tl-year" data-r>2025</div>
+        <div class="tl-item" data-r>
+          <article class="tcard">
+            <div>
+              <div class="tcard-h"><svg class="i"><use href="#i-bars"/></svg><h3>Data Science Training</h3><span class="date">Jun 2025 – Jul 2025</span></div>
+              <p class="org"><svg class="i"><use href="#i-bars"/></svg>DLK Software Solutions, Chennai</p>
+              <div class="tbody">
+                <p>Completed structured training in Python and data analysis — using pandas and NumPy and foundational machine learning concepts.</p>
+                <div class="pills"><span data-pop>Python</span><span data-pop>pandas</span><span data-pop>NumPy</span><span data-pop>Machine Learning</span><span data-pop>Data Analysis</span></div>
+              </div>
+            </div>
+            <div class="tside">
+              <button class="cert-btn" data-cert="dlk" aria-label="View DLK Software Solutions certificate">
+                <span class="cert-wrap"><span class="cert"><img src="assets/certificates/dlk-data-science-2025.jpg" alt="DLK Software Solutions certificate of completion, Data Science, June–July 2025" loading="lazy"></span><span class="ob"><svg class="i"><use href="#i-ext"/></svg></span></span>
+                <span class="lbl">View Certificate <svg class="i"><use href="#i-arrow"/></svg></span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="tl-year" data-r>2024</div>
+        <div class="tl-item" data-r>
+          <article class="tcard">
+            <div>
+              <div class="tcard-h"><svg class="i" style="color:#3bc7a0"><use href="#i-layers"/></svg><h3>Python Programming Intern</h3><span class="date">Jun 2024 – Jul 2024</span></div>
+              <p class="org"><svg class="i"><use href="#i-target"/></svg>SCION Research and Development</p>
+              <div class="tbody">
+                <p>Automated internal engineering workflows in Python and supported the software development team on active research projects.</p>
+                <div class="pills"><span data-pop>Python</span><span data-pop>Automation</span><span data-pop>Engineering Workflows</span><span data-pop>Research</span></div>
+              </div>
+            </div>
+            <div class="tside">
+              <button class="cert-btn" data-cert="scion" aria-label="View SCION Research and Development certificate">
+                <span class="cert-wrap"><span class="cert"><img src="assets/certificates/scion-internship-2024.jpg" alt="SCION Research and Development certificate of internship, June–July 2024" loading="lazy"></span><span class="ob"><svg class="i"><use href="#i-ext"/></svg></span></span>
+                <span class="lbl">View Certificate <svg class="i"><use href="#i-arrow"/></svg></span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="exp-stats" data-r>
+        <div><svg class="i"><use href="#i-book"/></svg><div><b data-count="2">2</b><strong>Internships</strong><span>Hands-on experience in real-world environments.</span></div></div>
+        <div><svg class="i"><use href="#i-zap"/></svg><div><b data-count="1">1</b><strong>Ongoing Role</strong><span>Building practical skills while working.</span></div></div>
+        <div><svg class="i"><use href="#i-bars"/></svg><div><b>Continuous</b><strong>Learning</strong><span>Exploring new tools and technologies.</span></div></div>
+        <p class="tracked">Experience<br>builds<br>perspective.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="sec skills" id="skills">
+  <div class="planet" aria-hidden="true"></div>
+  <div class="wrap sk-top">
+    <div>
+      <p class="eyebrow" data-r>Skills &amp; tools</p>
+      <h2 class="display" data-split>
+        <span class="line"><span>Tools for</span></span>
+        <span class="line"><span><span class="gold">Real</span> Solutions.</span></span>
+      </h2>
+      <p class="lede" data-r>A combination of technologies, tools and practices I use to turn ideas into working products. I’m always learning and exploring new tools to improve and build more scalable solutions.</p>
+      <a href="#contact" class="learn-card" data-r data-pop>
+        <svg class="i"><use href="#i-bars"/></svg>
+        <span><b>Continuous Learning</b><span>Exploring new tools.<br>Building better solutions.</span></span>
+        <span class="go"><svg class="i"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+
+    <div class="stack-area" id="stackArea">
+      <div class="stack" aria-hidden="true">
+        <div class="pw" style="top:170px" data-plate><div class="plate"></div><span class="pico"><svg class="i"><use href="#i-grid"/></svg></span><span class="plbl">APPLICATIONS</span></div>
+        <div class="pw" style="top:258px" data-plate><div class="plate"></div><span class="pico"><svg class="i"><use href="#i-gear"/></svg></span><span class="plbl">TOOLS &amp; DEVOPS</span></div>
+        <div class="pw" style="top:346px" data-plate><div class="plate p-blue"></div><span class="pico"><svg class="i"><use href="#i-db"/></svg></span><span class="plbl">DATA &amp; DATABASES</span></div>
+        <div class="pw" style="top:434px" data-plate><div class="plate p-blue"></div><span class="pico"><svg class="i"><use href="#i-code"/></svg></span><span class="plbl">BACKEND</span></div>
+        <div class="pw fe" style="top:522px" data-plate><div class="plate p-orange"></div><span class="pico"><svg class="i"><use href="#i-win"/></svg></span><span class="plbl">FRONTEND</span></div>
+      </div>
+      <p class="sdesc" style="top:128px" data-r><span>Build useful products<br>for real-world problems.</span></p>
+      <p class="sdesc" style="top:216px" data-r><span>Deploy, manage<br>and keep things running.</span></p>
+      <p class="sdesc" style="top:304px" data-r><span>Store, analyse<br>and work with data.</span></p>
+      <p class="sdesc" style="top:392px" data-r><span>Build robust and scalable<br>backend systems.</span></p>
+      <p class="sdesc" style="top:480px" data-r><span>Create modern and<br>responsive user interfaces.</span></p>
+      <div class="hand sk-note" aria-hidden="true">Different<br>&nbsp;pieces.<br>A bigger picture.
+        <svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M56 2C52 22 36 34 6 36M16 28 6 36l12 3"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sk-head" data-r><p class="eyebrow">Technical skills</p><p class="tracked">More than tools<br>a mindset to build →</p></div>
+    <div class="scards">
+      <div data-pop class="scard sc-o" data-r><svg class="i"><use href="#i-win"/></svg><h3>Frontend</h3><ul><li>React</li><li>Next.js</li><li>JavaScript</li></ul></div>
+      <div data-pop class="scard sc-b" data-r><svg class="i"><use href="#i-code"/></svg><h3>Backend</h3><ul><li>Java</li><li>Spring Boot</li><li>Python</li><li>Flask</li><li>REST APIs</li></ul></div>
+      <div data-pop class="scard sc-a" data-r><svg class="i"><use href="#i-db"/></svg><h3>Databases</h3><ul><li>MongoDB</li><li>Supabase</li><li>SQL</li></ul></div>
+      <div data-pop class="scard sc-v" data-r><svg class="i"><use href="#i-bars"/></svg><h3>Data &amp; Analysis</h3><ul><li>pandas</li><li>NumPy</li><li>Foundational<br>Machine Learning</li></ul></div>
+      <div data-pop class="scard sc-t" data-r><svg class="i"><use href="#i-cloud"/></svg><h3>DevOps</h3><ul><li>Docker</li><li>Kubernetes</li><li class="m">(Containerizing and running applications)</li></ul></div>
+    </div>
+    <div class="tools" data-r>
+      <p class="tracked">Tools I use</p>
+      <ul>
+        <li data-pop><span class="tdot" style="background:linear-gradient(135deg,#4f8bff,#9b6bff 55%,#ff7aa8)">Ag</span>Antigravity</li>
+        <li data-pop><span class="tdot" style="background:#d97757">Cl</span>Claude</li>
+        <li data-pop><span class="tdot" style="background:#1f7ad4">VS</span>VS Code</li>
+        <li data-pop><span class="tdot" style="background:#e8532f">Gt</span>Git</li>
+        <li data-pop><span class="tdot" style="background:#24292f;border:1px solid #444">GH</span>GitHub</li>
+        <li data-pop><span class="tdot" style="background:#1d63ed">Dk</span>Docker</li>
+        <li data-pop><span class="tdot" style="background:#ef6a33">Pm</span>Postman</li>
+        <li data-pop><span class="tdot" style="background:#1e9e5a">Sh</span>Google Sheets</li>
+        <li data-pop><span class="tdot" style="background:linear-gradient(135deg,#1fa463,#4285f4 55%,#ffcd40)">Dr</span>Google Drive</li>
+      </ul>
+      <p class="tracked rt">Learn<br>Build<br>Improve<br>Repeat</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contact">
+  <div class="horizon" aria-hidden="true"></div>
+  <div class="wrap ct-grid">
+    <div class="ct-left">
+      <p class="eyebrow" data-r>Get in touch</p>
+      <h2 class="display" data-split>
+        <span class="line"><span>Let’s build</span></span>
+        <span class="line"><span>something</span></span>
+        <span class="line"><span class="o">useful.</span></span>
+      </h2>
+      <p class="lede" data-r>I’m currently open to opportunities where I can contribute to real-world software products, work with experienced teams, and continue growing as a full-stack developer.</p>
+      <p class="dash-note" data-r>GOOD IDEAS<br>LEAD TO GREAT THINGS.</p>
+      <div class="hand opp-note" aria-hidden="true">Open to<br>&nbsp;new opportunities
+        <svg viewBox="0 0 50 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 2c30 8 40 30 26 54M28 48l8 8 6-10"/></svg>
+      </div>
+    </div>
+
+    <div class="ccards">
+      <a class="ccard wide" href="mailto:mohamedxxwaseem70@gmail.com" data-r><span class="ci"><svg class="i"><use href="#i-mail"/></svg></span><span><b>Email</b><span class="val">mohamedxxwaseem70@gmail.com</span><small>I usually reply within 24 hours.</small></span></a>
+      <a class="ccard" href="tel:+918072355318" data-r><span class="ci"><svg class="i"><use href="#i-phone"/></svg></span><span><b>Phone</b><span class="val">+91 8072355318</span><small>Feel free to call or WhatsApp.</small></span></a>
+      <a class="ccard" href="https://www.linkedin.com/in/mohamed-waseem-ba3b9142b/" target="_blank" rel="noopener" data-r><span class="ci"><span class="in-mark">in</span></span><span><b>LinkedIn</b><span class="val">Connect with me <svg class="i"><use href="#i-ext"/></svg></span><small>Let’s share and grow together.</small></span></a>
+      <a class="ccard wide" href="https://github.com/mohamedwaseemgitx7-dotcom" target="_blank" rel="noopener" data-r><span class="ci"><span class="gh-mark">gh</span></span><span><b>GitHub</b><span class="val">mohamedwaseemgitx7-dotcom <svg class="i"><use href="#i-ext"/></svg></span><small>Check out my projects and code.</small></span></a>
+      <div class="rcard" data-r><svg class="i"><use href="#i-file"/></svg><div><b>My Resume</b><span>Download my latest resume (PDF)</span></div><a class="btn btn-ghost btn-sm" href="assets/resume/Mohamed_Waseem_Resume.pdf" download data-resume>Download Resume <svg class="i"><use href="#i-down"/></svg></a></div>
+    </div>
+
+  </div>
+
+  <div class="wrap">
+    <div class="loc" data-r>
+      <div class="l1">
+        <small>Currently based in</small>
+        <h4><svg class="i"><use href="#i-pin"/></svg>Thanjavur, India</h4>
+        <p>Open to remote opportunities<br>and willing to relocate.</p>
+      </div>
+      <div class="map">
+        <svg viewBox="0 0 600 270" aria-hidden="true"><circle cx="105" cy="5" r="1.9"/><circle cx="115" cy="5" r="1.9"/><circle cx="125" cy="5" r="1.9"/><circle cx="135" cy="5" r="1.9"/><circle cx="145" cy="5" r="1.9"/><circle cx="155" cy="5" r="1.9"/><circle cx="165" cy="5" r="1.9"/><circle cx="175" cy="5" r="1.9"/><circle cx="185" cy="5" r="1.9"/><circle cx="205" cy="5" r="1.9"/><circle cx="215" cy="5" r="1.9"/><circle cx="225" cy="5" r="1.9"/><circle cx="235" cy="5" r="1.9"/><circle cx="245" cy="5" r="1.9"/><circle cx="255" cy="5" r="1.9"/><circle cx="265" cy="5" r="1.9"/><circle cx="325" cy="5" r="1.9"/><circle cx="335" cy="5" r="1.9"/><circle cx="405" cy="5" r="1.9"/><circle cx="415" cy="5" r="1.9"/><circle cx="425" cy="5" r="1.9"/><circle cx="435" cy="5" r="1.9"/><circle cx="445" cy="5" r="1.9"/><circle cx="455" cy="5" r="1.9"/><circle cx="465" cy="5" r="1.9"/><circle cx="475" cy="5" r="1.9"/><circle cx="485" cy="5" r="1.9"/><circle cx="495" cy="5" r="1.9"/><circle cx="505" cy="5" r="1.9"/><circle cx="515" cy="5" r="1.9"/><circle cx="525" cy="5" r="1.9"/><circle cx="535" cy="5" r="1.9"/><circle cx="25" cy="15" r="1.9"/><circle cx="35" cy="15" r="1.9"/><circle cx="45" cy="15" r="1.9"/><circle cx="55" cy="15" r="1.9"/><circle cx="65" cy="15" r="1.9"/><circle cx="75" cy="15" r="1.9"/><circle cx="85" cy="15" r="1.9"/><circle cx="95" cy="15" r="1.9"/><circle cx="105" cy="15" r="1.9"/><circle cx="115" cy="15" r="1.9"/><circle cx="125" cy="15" r="1.9"/><circle cx="135" cy="15" r="1.9"/><circle cx="145" cy="15" r="1.9"/><circle cx="155" cy="15" r="1.9"/><circle cx="165" cy="15" r="1.9"/><circle cx="175" cy="15" r="1.9"/><circle cx="185" cy="15" r="1.9"/><circle cx="195" cy="15" r="1.9"/><circle cx="215" cy="15" r="1.9"/><circle cx="225" cy="15" r="1.9"/><circle cx="235" cy="15" r="1.9"/><circle cx="245" cy="15" r="1.9"/><circle cx="255" cy="15" r="1.9"/><circle cx="265" cy="15" r="1.9"/><circle cx="335" cy="15" r="1.9"/><circle cx="345" cy="15" r="1.9"/><circle cx="365" cy="15" r="1.9"/><circle cx="375" cy="15" r="1.9"/><circle cx="385" cy="15" r="1.9"/><circle cx="395" cy="15" r="1.9"/><circle cx="405" cy="15" r="1.9"/><circle cx="415" cy="15" r="1.9"/><circle cx="425" cy="15" r="1.9"/><circle cx="435" cy="15" r="1.9"/><circle cx="445" cy="15" r="1.9"/><circle cx="455" cy="15" r="1.9"/><circle cx="465" cy="15" r="1.9"/><circle cx="475" cy="15" r="1.9"/><circle cx="485" cy="15" r="1.9"/><circle cx="495" cy="15" r="1.9"/><circle cx="505" cy="15" r="1.9"/><circle cx="515" cy="15" r="1.9"/><circle cx="525" cy="15" r="1.9"/><circle cx="535" cy="15" r="1.9"/><circle cx="545" cy="15" r="1.9"/><circle cx="555" cy="15" r="1.9"/><circle cx="565" cy="15" r="1.9"/><circle cx="575" cy="15" r="1.9"/><circle cx="585" cy="15" r="1.9"/><circle cx="595" cy="15" r="1.9"/><circle cx="25" cy="25" r="1.9"/><circle cx="35" cy="25" r="1.9"/><circle cx="45" cy="25" r="1.9"/><circle cx="55" cy="25" r="1.9"/><circle cx="65" cy="25" r="1.9"/><circle cx="75" cy="25" r="1.9"/><circle cx="85" cy="25" r="1.9"/><circle cx="95" cy="25" r="1.9"/><circle cx="105" cy="25" r="1.9"/><circle cx="115" cy="25" r="1.9"/><circle cx="125" cy="25" r="1.9"/><circle cx="135" cy="25" r="1.9"/><circle cx="165" cy="25" r="1.9"/><circle cx="175" cy="25" r="1.9"/><circle cx="185" cy="25" r="1.9"/><circle cx="195" cy="25" r="1.9"/><circle cx="215" cy="25" r="1.9"/><circle cx="225" cy="25" r="1.9"/><circle cx="235" cy="25" r="1.9"/><circle cx="245" cy="25" r="1.9"/><circle cx="255" cy="25" r="1.9"/><circle cx="275" cy="25" r="1.9"/><circle cx="315" cy="25" r="1.9"/><circle cx="325" cy="25" r="1.9"/><circle cx="335" cy="25" r="1.9"/><circle cx="345" cy="25" r="1.9"/><circle cx="355" cy="25" r="1.9"/><circle cx="365" cy="25" r="1.9"/><circle cx="375" cy="25" r="1.9"/><circle cx="385" cy="25" r="1.9"/><circle cx="395" cy="25" r="1.9"/><circle cx="405" cy="25" r="1.9"/><circle cx="415" cy="25" r="1.9"/><circle cx="425" cy="25" r="1.9"/><circle cx="435" cy="25" r="1.9"/><circle cx="445" cy="25" r="1.9"/><circle cx="455" cy="25" r="1.9"/><circle cx="465" cy="25" r="1.9"/><circle cx="475" cy="25" r="1.9"/><circle cx="485" cy="25" r="1.9"/><circle cx="495" cy="25" r="1.9"/><circle cx="505" cy="25" r="1.9"/><circle cx="515" cy="25" r="1.9"/><circle cx="525" cy="25" r="1.9"/><circle cx="535" cy="25" r="1.9"/><circle cx="545" cy="25" r="1.9"/><circle cx="555" cy="25" r="1.9"/><circle cx="565" cy="25" r="1.9"/><circle cx="575" cy="25" r="1.9"/><circle cx="585" cy="25" r="1.9"/><circle cx="595" cy="25" r="1.9"/><circle cx="35" cy="35" r="1.9"/><circle cx="45" cy="35" r="1.9"/><circle cx="55" cy="35" r="1.9"/><circle cx="65" cy="35" r="1.9"/><circle cx="75" cy="35" r="1.9"/><circle cx="85" cy="35" r="1.9"/><circle cx="95" cy="35" r="1.9"/><circle cx="105" cy="35" r="1.9"/><circle cx="115" cy="35" r="1.9"/><circle cx="125" cy="35" r="1.9"/><circle cx="135" cy="35" r="1.9"/><circle cx="175" cy="35" r="1.9"/><circle cx="185" cy="35" r="1.9"/><circle cx="195" cy="35" r="1.9"/><circle cx="225" cy="35" r="1.9"/><circle cx="235" cy="35" r="1.9"/><circle cx="315" cy="35" r="1.9"/><circle cx="325" cy="35" r="1.9"/><circle cx="335" cy="35" r="1.9"/><circle cx="345" cy="35" r="1.9"/><circle cx="355" cy="35" r="1.9"/><circle cx="365" cy="35" r="1.9"/><circle cx="375" cy="35" r="1.9"/><circle cx="385" cy="35" r="1.9"/><circle cx="395" cy="35" r="1.9"/><circle cx="405" cy="35" r="1.9"/><circle cx="415" cy="35" r="1.9"/><circle cx="425" cy="35" r="1.9"/><circle cx="435" cy="35" r="1.9"/><circle cx="445" cy="35" r="1.9"/><circle cx="455" cy="35" r="1.9"/><circle cx="465" cy="35" r="1.9"/><circle cx="475" cy="35" r="1.9"/><circle cx="485" cy="35" r="1.9"/><circle cx="495" cy="35" r="1.9"/><circle cx="505" cy="35" r="1.9"/><circle cx="515" cy="35" r="1.9"/><circle cx="525" cy="35" r="1.9"/><circle cx="535" cy="35" r="1.9"/><circle cx="545" cy="35" r="1.9"/><circle cx="555" cy="35" r="1.9"/><circle cx="565" cy="35" r="1.9"/><circle cx="575" cy="35" r="1.9"/><circle cx="85" cy="45" r="1.9"/><circle cx="95" cy="45" r="1.9"/><circle cx="105" cy="45" r="1.9"/><circle cx="115" cy="45" r="1.9"/><circle cx="125" cy="45" r="1.9"/><circle cx="135" cy="45" r="1.9"/><circle cx="165" cy="45" r="1.9"/><circle cx="175" cy="45" r="1.9"/><circle cx="185" cy="45" r="1.9"/><circle cx="195" cy="45" r="1.9"/><circle cx="205" cy="45" r="1.9"/><circle cx="295" cy="45" r="1.9"/><circle cx="305" cy="45" r="1.9"/><circle cx="315" cy="45" r="1.9"/><circle cx="325" cy="45" r="1.9"/><circle cx="335" cy="45" r="1.9"/><circle cx="345" cy="45" r="1.9"/><circle cx="355" cy="45" r="1.9"/><circle cx="365" cy="45" r="1.9"/><circle cx="375" cy="45" r="1.9"/><circle cx="385" cy="45" r="1.9"/><circle cx="395" cy="45" r="1.9"/><circle cx="405" cy="45" r="1.9"/><circle cx="415" cy="45" r="1.9"/><circle cx="425" cy="45" r="1.9"/><circle cx="435" cy="45" r="1.9"/><circle cx="445" cy="45" r="1.9"/><circle cx="455" cy="45" r="1.9"/><circle cx="465" cy="45" r="1.9"/><circle cx="475" cy="45" r="1.9"/><circle cx="485" cy="45" r="1.9"/><circle cx="495" cy="45" r="1.9"/><circle cx="505" cy="45" r="1.9"/><circle cx="515" cy="45" r="1.9"/><circle cx="525" cy="45" r="1.9"/><circle cx="535" cy="45" r="1.9"/><circle cx="545" cy="45" r="1.9"/><circle cx="555" cy="45" r="1.9"/><circle cx="95" cy="55" r="1.9"/><circle cx="105" cy="55" r="1.9"/><circle cx="115" cy="55" r="1.9"/><circle cx="125" cy="55" r="1.9"/><circle cx="135" cy="55" r="1.9"/><circle cx="145" cy="55" r="1.9"/><circle cx="155" cy="55" r="1.9"/><circle cx="165" cy="55" r="1.9"/><circle cx="175" cy="55" r="1.9"/><circle cx="185" cy="55" r="1.9"/><circle cx="195" cy="55" r="1.9"/><circle cx="205" cy="55" r="1.9"/><circle cx="295" cy="55" r="1.9"/><circle cx="305" cy="55" r="1.9"/><circle cx="315" cy="55" r="1.9"/><circle cx="325" cy="55" r="1.9"/><circle cx="335" cy="55" r="1.9"/><circle cx="345" cy="55" r="1.9"/><circle cx="355" cy="55" r="1.9"/><circle cx="365" cy="55" r="1.9"/><circle cx="375" cy="55" r="1.9"/><circle cx="385" cy="55" r="1.9"/><circle cx="395" cy="55" r="1.9"/><circle cx="405" cy="55" r="1.9"/><circle cx="415" cy="55" r="1.9"/><circle cx="425" cy="55" r="1.9"/><circle cx="435" cy="55" r="1.9"/><circle cx="445" cy="55" r="1.9"/><circle cx="455" cy="55" r="1.9"/><circle cx="465" cy="55" r="1.9"/><circle cx="475" cy="55" r="1.9"/><circle cx="485" cy="55" r="1.9"/><circle cx="495" cy="55" r="1.9"/><circle cx="505" cy="55" r="1.9"/><circle cx="515" cy="55" r="1.9"/><circle cx="525" cy="55" r="1.9"/><circle cx="535" cy="55" r="1.9"/><circle cx="95" cy="65" r="1.9"/><circle cx="105" cy="65" r="1.9"/><circle cx="115" cy="65" r="1.9"/><circle cx="125" cy="65" r="1.9"/><circle cx="135" cy="65" r="1.9"/><circle cx="145" cy="65" r="1.9"/><circle cx="155" cy="65" r="1.9"/><circle cx="165" cy="65" r="1.9"/><circle cx="175" cy="65" r="1.9"/><circle cx="185" cy="65" r="1.9"/><circle cx="295" cy="65" r="1.9"/><circle cx="305" cy="65" r="1.9"/><circle cx="315" cy="65" r="1.9"/><circle cx="325" cy="65" r="1.9"/><circle cx="335" cy="65" r="1.9"/><circle cx="345" cy="65" r="1.9"/><circle cx="355" cy="65" r="1.9"/><circle cx="365" cy="65" r="1.9"/><circle cx="375" cy="65" r="1.9"/><circle cx="385" cy="65" r="1.9"/><circle cx="395" cy="65" r="1.9"/><circle cx="405" cy="65" r="1.9"/><circle cx="415" cy="65" r="1.9"/><circle cx="425" cy="65" r="1.9"/><circle cx="435" cy="65" r="1.9"/><circle cx="445" cy="65" r="1.9"/><circle cx="455" cy="65" r="1.9"/><circle cx="465" cy="65" r="1.9"/><circle cx="475" cy="65" r="1.9"/><circle cx="485" cy="65" r="1.9"/><circle cx="495" cy="65" r="1.9"/><circle cx="505" cy="65" r="1.9"/><circle cx="515" cy="65" r="1.9"/><circle cx="525" cy="65" r="1.9"/><circle cx="535" cy="65" r="1.9"/><circle cx="95" cy="75" r="1.9"/><circle cx="105" cy="75" r="1.9"/><circle cx="115" cy="75" r="1.9"/><circle cx="125" cy="75" r="1.9"/><circle cx="135" cy="75" r="1.9"/><circle cx="145" cy="75" r="1.9"/><circle cx="155" cy="75" r="1.9"/><circle cx="165" cy="75" r="1.9"/><circle cx="175" cy="75" r="1.9"/><circle cx="295" cy="75" r="1.9"/><circle cx="305" cy="75" r="1.9"/><circle cx="325" cy="75" r="1.9"/><circle cx="345" cy="75" r="1.9"/><circle cx="355" cy="75" r="1.9"/><circle cx="365" cy="75" r="1.9"/><circle cx="375" cy="75" r="1.9"/><circle cx="385" cy="75" r="1.9"/><circle cx="395" cy="75" r="1.9"/><circle cx="405" cy="75" r="1.9"/><circle cx="415" cy="75" r="1.9"/><circle cx="425" cy="75" r="1.9"/><circle cx="435" cy="75" r="1.9"/><circle cx="445" cy="75" r="1.9"/><circle cx="455" cy="75" r="1.9"/><circle cx="465" cy="75" r="1.9"/><circle cx="475" cy="75" r="1.9"/><circle cx="485" cy="75" r="1.9"/><circle cx="495" cy="75" r="1.9"/><circle cx="505" cy="75" r="1.9"/><circle cx="515" cy="75" r="1.9"/><circle cx="525" cy="75" r="1.9"/><circle cx="535" cy="75" r="1.9"/><circle cx="105" cy="85" r="1.9"/><circle cx="115" cy="85" r="1.9"/><circle cx="125" cy="85" r="1.9"/><circle cx="135" cy="85" r="1.9"/><circle cx="145" cy="85" r="1.9"/><circle cx="155" cy="85" r="1.9"/><circle cx="165" cy="85" r="1.9"/><circle cx="295" cy="85" r="1.9"/><circle cx="305" cy="85" r="1.9"/><circle cx="315" cy="85" r="1.9"/><circle cx="325" cy="85" r="1.9"/><circle cx="335" cy="85" r="1.9"/><circle cx="345" cy="85" r="1.9"/><circle cx="355" cy="85" r="1.9"/><circle cx="365" cy="85" r="1.9"/><circle cx="375" cy="85" r="1.9"/><circle cx="385" cy="85" r="1.9"/><circle cx="395" cy="85" r="1.9"/><circle cx="405" cy="85" r="1.9"/><circle cx="415" cy="85" r="1.9"/><circle cx="425" cy="85" r="1.9"/><circle cx="435" cy="85" r="1.9"/><circle cx="445" cy="85" r="1.9"/><circle cx="455" cy="85" r="1.9"/><circle cx="465" cy="85" r="1.9"/><circle cx="475" cy="85" r="1.9"/><circle cx="485" cy="85" r="1.9"/><circle cx="495" cy="85" r="1.9"/><circle cx="505" cy="85" r="1.9"/><circle cx="525" cy="85" r="1.9"/><circle cx="115" cy="95" r="1.9"/><circle cx="125" cy="95" r="1.9"/><circle cx="135" cy="95" r="1.9"/><circle cx="145" cy="95" r="1.9"/><circle cx="155" cy="95" r="1.9"/><circle cx="165" cy="95" r="1.9"/><circle cx="285" cy="95" r="1.9"/><circle cx="295" cy="95" r="1.9"/><circle cx="305" cy="95" r="1.9"/><circle cx="315" cy="95" r="1.9"/><circle cx="325" cy="95" r="1.9"/><circle cx="335" cy="95" r="1.9"/><circle cx="345" cy="95" r="1.9"/><circle cx="355" cy="95" r="1.9"/><circle cx="365" cy="95" r="1.9"/><circle cx="375" cy="95" r="1.9"/><circle cx="385" cy="95" r="1.9"/><circle cx="395" cy="95" r="1.9"/><circle cx="405" cy="95" r="1.9"/><circle cx="415" cy="95" r="1.9"/><circle cx="425" cy="95" r="1.9"/><circle cx="435" cy="95" r="1.9"/><circle cx="445" cy="95" r="1.9"/><circle cx="455" cy="95" r="1.9"/><circle cx="465" cy="95" r="1.9"/><circle cx="475" cy="95" r="1.9"/><circle cx="485" cy="95" r="1.9"/><circle cx="495" cy="95" r="1.9"/><circle cx="505" cy="95" r="1.9"/><circle cx="125" cy="105" r="1.9"/><circle cx="135" cy="105" r="1.9"/><circle cx="145" cy="105" r="1.9"/><circle cx="275" cy="105" r="1.9"/><circle cx="285" cy="105" r="1.9"/><circle cx="295" cy="105" r="1.9"/><circle cx="305" cy="105" r="1.9"/><circle cx="315" cy="105" r="1.9"/><circle cx="325" cy="105" r="1.9"/><circle cx="335" cy="105" r="1.9"/><circle cx="345" cy="105" r="1.9"/><circle cx="355" cy="105" r="1.9"/><circle cx="365" cy="105" r="1.9"/><circle cx="375" cy="105" r="1.9"/><circle cx="385" cy="105" r="1.9"/><circle cx="395" cy="105" r="1.9"/><circle cx="415" cy="105" r="1.9"/><circle cx="425" cy="105" r="1.9"/><circle cx="435" cy="105" r="1.9"/><circle cx="445" cy="105" r="1.9"/><circle cx="465" cy="105" r="1.9"/><circle cx="475" cy="105" r="1.9"/><circle cx="485" cy="105" r="1.9"/><circle cx="495" cy="105" r="1.9"/><circle cx="505" cy="105" r="1.9"/><circle cx="135" cy="115" r="1.9"/><circle cx="145" cy="115" r="1.9"/><circle cx="155" cy="115" r="1.9"/><circle cx="165" cy="115" r="1.9"/><circle cx="175" cy="115" r="1.9"/><circle cx="275" cy="115" r="1.9"/><circle cx="285" cy="115" r="1.9"/><circle cx="295" cy="115" r="1.9"/><circle cx="305" cy="115" r="1.9"/><circle cx="315" cy="115" r="1.9"/><circle cx="325" cy="115" r="1.9"/><circle cx="335" cy="115" r="1.9"/><circle cx="345" cy="115" r="1.9"/><circle cx="355" cy="115" r="1.9"/><circle cx="365" cy="115" r="1.9"/><circle cx="375" cy="115" r="1.9"/><circle cx="385" cy="115" r="1.9"/><circle cx="395" cy="115" r="1.9"/><circle cx="425" cy="115" r="1.9"/><circle cx="435" cy="115" r="1.9"/><circle cx="445" cy="115" r="1.9"/><circle cx="465" cy="115" r="1.9"/><circle cx="475" cy="115" r="1.9"/><circle cx="485" cy="115" r="1.9"/><circle cx="145" cy="125" r="1.9"/><circle cx="155" cy="125" r="1.9"/><circle cx="165" cy="125" r="1.9"/><circle cx="275" cy="125" r="1.9"/><circle cx="285" cy="125" r="1.9"/><circle cx="295" cy="125" r="1.9"/><circle cx="305" cy="125" r="1.9"/><circle cx="315" cy="125" r="1.9"/><circle cx="325" cy="125" r="1.9"/><circle cx="335" cy="125" r="1.9"/><circle cx="345" cy="125" r="1.9"/><circle cx="355" cy="125" r="1.9"/><circle cx="365" cy="125" r="1.9"/><circle cx="375" cy="125" r="1.9"/><circle cx="385" cy="125" r="1.9"/><circle cx="425" cy="125" r="1.9"/><circle cx="435" cy="125" r="1.9"/><circle cx="465" cy="125" r="1.9"/><circle cx="475" cy="125" r="1.9"/><circle cx="505" cy="125" r="1.9"/><circle cx="155" cy="135" r="1.9"/><circle cx="165" cy="135" r="1.9"/><circle cx="175" cy="135" r="1.9"/><circle cx="185" cy="135" r="1.9"/><circle cx="195" cy="135" r="1.9"/><circle cx="205" cy="135" r="1.9"/><circle cx="275" cy="135" r="1.9"/><circle cx="285" cy="135" r="1.9"/><circle cx="295" cy="135" r="1.9"/><circle cx="305" cy="135" r="1.9"/><circle cx="315" cy="135" r="1.9"/><circle cx="325" cy="135" r="1.9"/><circle cx="335" cy="135" r="1.9"/><circle cx="345" cy="135" r="1.9"/><circle cx="355" cy="135" r="1.9"/><circle cx="365" cy="135" r="1.9"/><circle cx="375" cy="135" r="1.9"/><circle cx="385" cy="135" r="1.9"/><circle cx="395" cy="135" r="1.9"/><circle cx="435" cy="135" r="1.9"/><circle cx="475" cy="135" r="1.9"/><circle cx="505" cy="135" r="1.9"/><circle cx="175" cy="145" r="1.9"/><circle cx="185" cy="145" r="1.9"/><circle cx="195" cy="145" r="1.9"/><circle cx="205" cy="145" r="1.9"/><circle cx="215" cy="145" r="1.9"/><circle cx="295" cy="145" r="1.9"/><circle cx="305" cy="145" r="1.9"/><circle cx="315" cy="145" r="1.9"/><circle cx="325" cy="145" r="1.9"/><circle cx="335" cy="145" r="1.9"/><circle cx="345" cy="145" r="1.9"/><circle cx="355" cy="145" r="1.9"/><circle cx="365" cy="145" r="1.9"/><circle cx="385" cy="145" r="1.9"/><circle cx="465" cy="145" r="1.9"/><circle cx="475" cy="145" r="1.9"/><circle cx="485" cy="145" r="1.9"/><circle cx="495" cy="145" r="1.9"/><circle cx="165" cy="155" r="1.9"/><circle cx="175" cy="155" r="1.9"/><circle cx="185" cy="155" r="1.9"/><circle cx="195" cy="155" r="1.9"/><circle cx="205" cy="155" r="1.9"/><circle cx="215" cy="155" r="1.9"/><circle cx="225" cy="155" r="1.9"/><circle cx="315" cy="155" r="1.9"/><circle cx="325" cy="155" r="1.9"/><circle cx="335" cy="155" r="1.9"/><circle cx="345" cy="155" r="1.9"/><circle cx="355" cy="155" r="1.9"/><circle cx="365" cy="155" r="1.9"/><circle cx="465" cy="155" r="1.9"/><circle cx="475" cy="155" r="1.9"/><circle cx="485" cy="155" r="1.9"/><circle cx="495" cy="155" r="1.9"/><circle cx="505" cy="155" r="1.9"/><circle cx="535" cy="155" r="1.9"/><circle cx="545" cy="155" r="1.9"/><circle cx="165" cy="165" r="1.9"/><circle cx="175" cy="165" r="1.9"/><circle cx="185" cy="165" r="1.9"/><circle cx="195" cy="165" r="1.9"/><circle cx="205" cy="165" r="1.9"/><circle cx="215" cy="165" r="1.9"/><circle cx="225" cy="165" r="1.9"/><circle cx="235" cy="165" r="1.9"/><circle cx="325" cy="165" r="1.9"/><circle cx="335" cy="165" r="1.9"/><circle cx="345" cy="165" r="1.9"/><circle cx="355" cy="165" r="1.9"/><circle cx="365" cy="165" r="1.9"/><circle cx="475" cy="165" r="1.9"/><circle cx="485" cy="165" r="1.9"/><circle cx="495" cy="165" r="1.9"/><circle cx="535" cy="165" r="1.9"/><circle cx="545" cy="165" r="1.9"/><circle cx="555" cy="165" r="1.9"/><circle cx="175" cy="175" r="1.9"/><circle cx="185" cy="175" r="1.9"/><circle cx="195" cy="175" r="1.9"/><circle cx="205" cy="175" r="1.9"/><circle cx="215" cy="175" r="1.9"/><circle cx="225" cy="175" r="1.9"/><circle cx="235" cy="175" r="1.9"/><circle cx="325" cy="175" r="1.9"/><circle cx="335" cy="175" r="1.9"/><circle cx="345" cy="175" r="1.9"/><circle cx="355" cy="175" r="1.9"/><circle cx="365" cy="175" r="1.9"/><circle cx="525" cy="175" r="1.9"/><circle cx="535" cy="175" r="1.9"/><circle cx="545" cy="175" r="1.9"/><circle cx="175" cy="185" r="1.9"/><circle cx="185" cy="185" r="1.9"/><circle cx="195" cy="185" r="1.9"/><circle cx="205" cy="185" r="1.9"/><circle cx="215" cy="185" r="1.9"/><circle cx="225" cy="185" r="1.9"/><circle cx="235" cy="185" r="1.9"/><circle cx="325" cy="185" r="1.9"/><circle cx="335" cy="185" r="1.9"/><circle cx="345" cy="185" r="1.9"/><circle cx="355" cy="185" r="1.9"/><circle cx="365" cy="185" r="1.9"/><circle cx="385" cy="185" r="1.9"/><circle cx="505" cy="185" r="1.9"/><circle cx="515" cy="185" r="1.9"/><circle cx="525" cy="185" r="1.9"/><circle cx="535" cy="185" r="1.9"/><circle cx="545" cy="185" r="1.9"/><circle cx="185" cy="195" r="1.9"/><circle cx="195" cy="195" r="1.9"/><circle cx="205" cy="195" r="1.9"/><circle cx="215" cy="195" r="1.9"/><circle cx="225" cy="195" r="1.9"/><circle cx="325" cy="195" r="1.9"/><circle cx="335" cy="195" r="1.9"/><circle cx="345" cy="195" r="1.9"/><circle cx="355" cy="195" r="1.9"/><circle cx="385" cy="195" r="1.9"/><circle cx="495" cy="195" r="1.9"/><circle cx="505" cy="195" r="1.9"/><circle cx="515" cy="195" r="1.9"/><circle cx="525" cy="195" r="1.9"/><circle cx="535" cy="195" r="1.9"/><circle cx="545" cy="195" r="1.9"/><circle cx="555" cy="195" r="1.9"/><circle cx="185" cy="205" r="1.9"/><circle cx="195" cy="205" r="1.9"/><circle cx="205" cy="205" r="1.9"/><circle cx="215" cy="205" r="1.9"/><circle cx="225" cy="205" r="1.9"/><circle cx="325" cy="205" r="1.9"/><circle cx="335" cy="205" r="1.9"/><circle cx="345" cy="205" r="1.9"/><circle cx="355" cy="205" r="1.9"/><circle cx="495" cy="205" r="1.9"/><circle cx="505" cy="205" r="1.9"/><circle cx="515" cy="205" r="1.9"/><circle cx="525" cy="205" r="1.9"/><circle cx="535" cy="205" r="1.9"/><circle cx="545" cy="205" r="1.9"/><circle cx="555" cy="205" r="1.9"/><circle cx="185" cy="215" r="1.9"/><circle cx="195" cy="215" r="1.9"/><circle cx="205" cy="215" r="1.9"/><circle cx="215" cy="215" r="1.9"/><circle cx="325" cy="215" r="1.9"/><circle cx="335" cy="215" r="1.9"/><circle cx="345" cy="215" r="1.9"/><circle cx="355" cy="215" r="1.9"/><circle cx="495" cy="215" r="1.9"/><circle cx="505" cy="215" r="1.9"/><circle cx="515" cy="215" r="1.9"/><circle cx="525" cy="215" r="1.9"/><circle cx="535" cy="215" r="1.9"/><circle cx="545" cy="215" r="1.9"/><circle cx="555" cy="215" r="1.9"/><circle cx="185" cy="225" r="1.9"/><circle cx="195" cy="225" r="1.9"/><circle cx="205" cy="225" r="1.9"/><circle cx="335" cy="225" r="1.9"/><circle cx="345" cy="225" r="1.9"/><circle cx="505" cy="225" r="1.9"/><circle cx="515" cy="225" r="1.9"/><circle cx="525" cy="225" r="1.9"/><circle cx="535" cy="225" r="1.9"/><circle cx="545" cy="225" r="1.9"/><circle cx="585" cy="225" r="1.9"/><circle cx="185" cy="235" r="1.9"/><circle cx="195" cy="235" r="1.9"/><circle cx="545" cy="235" r="1.9"/><circle cx="585" cy="235" r="1.9"/><circle cx="185" cy="245" r="1.9"/><circle cx="195" cy="245" r="1.9"/><circle cx="575" cy="245" r="1.9"/><circle cx="185" cy="255" r="1.9"/></svg>
+        <div class="you"><i></i><span>Thanjavur, India</span></div>
+        <div class="hand here" aria-hidden="true">From here<br>&nbsp;to everywhere</div>
+      </div>
+      <div class="l3">
+        <p class="tracked">Follow</p>
+        <div class="row">
+          <a href="https://github.com/mohamedwaseemgitx7-dotcom" target="_blank" rel="noopener" aria-label="GitHub"><span class="gh-mark">gh</span></a>
+          <a href="https://www.linkedin.com/in/mohamed-waseem-ba3b9142b/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="in-mark">in</span></a>
+          <a href="mailto:mohamedxxwaseem70@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+        </div>
+        <b>Mohamed Waseem</b>
+        <span>Computer Science Graduate · Full-Stack Developer</span>
+        <small>© 2026 Mohamed Waseem. All rights reserved.</small>
+      </div>
+    </div>
+    <div class="built-by" data-r>
+      <span>This portfolio is built with</span>
+      <ul>
+        <li data-pop><i style="background:#e34f26">5</i>HTML5</li>
+        <li data-pop><i style="background:#2965f1">3</i>CSS3</li>
+        <li data-pop><i style="background:#f7df1e;color:#1a1a1a">JS</i>JavaScript</li>
+        <li data-pop><i style="background:#0ae448;color:#0b1a0b">G</i>GSAP</li>
+        <li data-pop><i style="background:#ff98a2;color:#2a0b10">L</i>Lenis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- dialogs -->
+<dialog id="dlgCert"><div class="dlg"><button class="x" data-close aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button><img id="certImg" alt=""></div></dialog>
+<dialog id="dlgMed"><div class="dlg" style="padding:40px 38px">
+  <button class="x" data-close aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button>
+  <p class="eyebrow">Project details</p>
+  <h3>MedForms Pro</h3>
+  <p class="sub">Clinical Perfusion &amp; ICU Forms Management · Live 2026</p>
+  <ul>
+    <li><svg class="i"><use href="#i-check"/></svg>Full-stack web app that digitizes ICU and perfusion forms, replacing paper records with structured, searchable data.</li>
+    <li><svg class="i"><use href="#i-check"/></svg>Next.js and JavaScript for the interface with server-rendered pages and routing.</li>
+    <li><svg class="i"><use href="#i-check"/></svg>Backend services in Java (Spring Boot) alongside Python, integrated with Supabase for secure per-doctor data storage and authentication.</li>
+    <li><svg class="i"><use href="#i-check"/></svg>Exported data syncs to Google Sheets and Drive for ongoing reporting.</li>
+  </ul>
+  <a href="https://abcd-nine-zeta.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open Live Project <svg class="i"><use href="#i-arrow"/></svg></a>
+</div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
