@@ -73,26 +73,26 @@
   let lenis = null;
   if (!reduce && window.Lenis) {
     lenis = new Lenis({
-      lerp: 0.09,
-      wheelMultiplier: 1.15,
-      touchMultiplier: 1.6,
-      infinite: false,
+      lerp: 0.14,
+      wheelMultiplier: 0.85,
+      touchMultiplier: 1.2,
       smoothWheel: true,
+      syncTouch: false,
     });
-    if (window.gsap && window.ScrollTrigger) {
-      lenis.on('scroll', ScrollTrigger.update);
-      gsap.ticker.add((time) => lenis.raf(time * 1000));
-      gsap.ticker.lagSmoothing(0);
-    } else {
-      (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(0);
-    }
+    lenis.on('scroll', () => {
+      if (window.ScrollTrigger) ScrollTrigger.update();
+    });
+    (function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    })(performance.now());
   }
   $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
     const id = a.getAttribute('href'); if (id.length < 2) return;
     const t = $(id); if (!t) return;
     e.preventDefault(); closeMenu();
     const off = -parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) + 1;
-    if (lenis) lenis.scrollTo(t, {offset: id === '#home' ? 0 : off, duration: 0.85, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t))});
+    if (lenis) lenis.scrollTo(t, {offset: id === '#home' ? 0 : off, duration: 0.65});
     else window.scrollTo({top: t.getBoundingClientRect().top + scrollY + (id==='#home'?0:off), behavior: reduce ? 'auto' : 'smooth'});
   }));
 
