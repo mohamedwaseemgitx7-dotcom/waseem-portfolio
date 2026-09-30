@@ -73,26 +73,28 @@
   let lenis = null;
   if (!reduce && window.Lenis) {
     lenis = new Lenis({
-      lerp: 0.14,
-      wheelMultiplier: 0.85,
+      lerp: 0.11,
+      wheelMultiplier: 0.9,
       touchMultiplier: 1.2,
       smoothWheel: true,
       syncTouch: false,
     });
-    lenis.on('scroll', () => {
-      if (window.ScrollTrigger) ScrollTrigger.update();
-    });
-    (function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    })(performance.now());
+    // one frame loop: Lenis steps inside GSAP's ticker so scroll position and
+    // ScrollTrigger-driven tweens always update in the same frame (no 1-frame jitter)
+    if (window.gsap && window.ScrollTrigger) {
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t * 1000));
+      gsap.ticker.lagSmoothing(0);
+    } else {
+      (function raf(time) { lenis.raf(time); requestAnimationFrame(raf); })(performance.now());
+    }
   }
   $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
     const id = a.getAttribute('href'); if (id.length < 2) return;
     const t = $(id); if (!t) return;
     e.preventDefault(); closeMenu();
     const off = -parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) + 1;
-    if (lenis) lenis.scrollTo(t, {offset: id === '#home' ? 0 : off, duration: 0.65});
+    if (lenis) lenis.scrollTo(t, {offset: id === '#home' ? 0 : off, duration: 1.1, easing: x => 1 - Math.pow(1 - x, 4)});
     else window.scrollTo({top: t.getBoundingClientRect().top + scrollY + (id==='#home'?0:off), behavior: reduce ? 'auto' : 'smooth'});
   }));
 
@@ -118,7 +120,12 @@
       });
     }
   }
-  addEventListener('scroll', onScroll, {passive:true});
+  let scrollQueued = false;
+  addEventListener('scroll', () => {
+    if (scrollQueued) return;
+    scrollQueued = true;
+    requestAnimationFrame(() => { scrollQueued = false; onScroll(); });
+  }, {passive:true});
   addEventListener('resize', () => { const a = $('#navLinks a.is-active'); moveInd(a); drawChain(); });
   document.fonts && document.fonts.ready.then(() => { moveInd($('#navLinks a.is-active')); drawChain(); });
 
@@ -162,7 +169,7 @@
     .from('.hero-foot', {opacity:0, duration:1}, 1.4);
 
   // hero depth on scroll
-  gsap.to('.hero .planet', {yPercent:12, ease:'none', scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:0.3}});
+  gsap.to('.hero .planet', {yPercent:12, ease:'none', scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}});
 
   // split headings: lines rise from a mask
   $$('[data-split]').forEach(h => gsap.from($$('.line > span', h), {yPercent:115, duration:0.95, ease:E, stagger:.08, scrollTrigger:{trigger:h, start:'top 85%'}}));
@@ -173,7 +180,7 @@
 
   // about: connector draws, cards cascade
   const cp = document.getElementById('chainPath');
-  if (cp) { const L = cp.getTotalLength(); gsap.fromTo(cp, {strokeDasharray:L, strokeDashoffset:L}, {strokeDashoffset:0, ease:'none', scrollTrigger:{trigger:'.desk', start:'top 70%', end:'center 45%', scrub:0.4}}); }
+  if (cp) { const L = cp.getTotalLength(); gsap.fromTo(cp, {strokeDasharray:L, strokeDashoffset:L}, {strokeDashoffset:0, ease:'none', scrollTrigger:{trigger:'.desk', start:'top 70%', end:'center 45%', scrub:true}}); }
   gsap.from('.chain .cc', {y:24, opacity:0, stagger:.1, duration:0.85, ease:E, scrollTrigger:{trigger:'.desk', start:'top 72%'}});
   gsap.from('.laptop', {y:45, opacity:0, duration:1.0, ease:E, scrollTrigger:{trigger:'.desk', start:'top 75%'}});
   gsap.from('.win', {opacity:0, x:30, duration:1.1, ease:E, scrollTrigger:{trigger:'.desk', start:'top 75%'}});
@@ -181,7 +188,7 @@
   // medforms: laptop settles, callouts drift in on a slight delay
   gsap.from('#mfLap', {y:60, rotate:2, opacity:0, duration:1.1, ease:E, scrollTrigger:{trigger:'.device', start:'top 78%'}});
   gsap.from('.device [data-float]', {scale:.94, opacity:0, y:20, duration:0.85, ease:E, stagger:.1, delay:.25, scrollTrigger:{trigger:'.device', start:'top 72%'}});
-  gsap.to('#mfLap', {yPercent:-6, ease:'none', scrollTrigger:{trigger:'.medforms', start:'top bottom', end:'bottom top', scrub:0.3}});
+  gsap.to('#mfLap', {yPercent:-6, ease:'none', scrollTrigger:{trigger:'.medforms', start:'top bottom', end:'bottom top', scrub:true}});
   $$('.device [data-float]').forEach((el,i) => gsap.to(el, {y: (i%2? -10 : 10), duration: 3 + i*.4, ease:'sine.inOut', repeat:-1, yoyo:true, delay: 1.5}));
 
   // whatsapp: the conversation plays out
@@ -197,16 +204,16 @@
   });
 
   // experience: road draws itself up the mountain, timeline fills
-  ['#roadCore','#roadGlow'].forEach(s => { const p = $(s), L = p.getTotalLength(); gsap.fromTo(p, {strokeDasharray:L, strokeDashoffset:L}, {strokeDashoffset:0, ease:'none', scrollTrigger:{trigger:'.exp', start:'top 60%', end:'center 40%', scrub:0.5}}); });
-  gsap.fromTo('#tlFill', {scaleY:0}, {scaleY:1, ease:'none', scrollTrigger:{trigger:'#tl', start:'top 65%', end:'bottom 65%', scrub:0.3}});
+  ['#roadCore','#roadGlow'].forEach(s => { const p = $(s), L = p.getTotalLength(); gsap.fromTo(p, {strokeDasharray:L, strokeDashoffset:L}, {strokeDashoffset:0, ease:'none', scrollTrigger:{trigger:'.exp', start:'top 60%', end:'center 40%', scrub:true}}); });
+  gsap.fromTo('#tlFill', {scaleY:0}, {scaleY:1, ease:'none', scrollTrigger:{trigger:'#tl', start:'top 65%', end:'bottom 65%', scrub:true}});
 
   // skills: the stack assembles as you scroll
   const plates = $$('[data-plate]');
-  gsap.from(plates, {y:(i) => (i-2) * 70, opacity:0, ease:'power2.out', stagger:.05, scrollTrigger:{trigger:'#stackArea', start:'top 85%', end:'center 55%', scrub:0.4}});
+  gsap.from(plates, {y:(i) => (i-2) * 70, opacity:0, ease:'power2.out', stagger:.05, scrollTrigger:{trigger:'#stackArea', start:'top 85%', end:'center 55%', scrub:true}});
   gsap.from('.sdesc', {x:20, opacity:0, stagger:.06, duration:0.85, ease:E, scrollTrigger:{trigger:'#stackArea', start:'top 55%'}});
 
   // contact horizon rises
-  gsap.from('.horizon', {yPercent:14, opacity:.4, ease:'none', scrollTrigger:{trigger:'.contact', start:'top bottom', end:'top 20%', scrub:0.3}});
+  gsap.from('.horizon', {yPercent:14, opacity:.4, ease:'none', scrollTrigger:{trigger:'.contact', start:'top bottom', end:'top 20%', scrub:true}});
 
   addEventListener('load', () => ScrollTrigger.refresh());
 })();
